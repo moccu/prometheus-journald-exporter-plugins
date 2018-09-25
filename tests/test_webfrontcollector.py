@@ -4,7 +4,7 @@ import pytest
 from prometheus_client.exposition import generate_latest
 from pytz import utc
 
-from webfrontcollector import WebfrontCollectorPlugin
+from journald_exporter_plugins.webfrontcollector import WebfrontCollectorPlugin
 
 
 message = (

@@ -6,15 +6,18 @@ Plugins for prometheus-journald-exporter used at Moccu.
 Usage
 -----
 
+Installation:
+
+.. code-block:: shell
+
+    pip install https://github.com/moccu/prometheus-journald-exporter-plugins.git#journald_exporter_plugins
+
 Example configuration:
 
 .. code-block:: yaml
 
-    plugindirs:
-      - /path/to/plugins
-
     plugins:
-      - webfrontcollector.WebfrontCollectorPlugin
+      - journald_exporter_plugins.webfrontcollector.WebfrontCollectorPlugin
 
     webfrontcollector:
       filters:

@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-VERSION = '0.0.1'
+VERSION = __import__('journald_exporter_plugins').__version__
 
 
 def readme():
@@ -26,8 +26,11 @@ setup(
     author='Andreas Hug',
     author_email='andreas.hug@moccu.com',
     packages=find_packages(exclude=['tests', 'tests.*']),
-    package_dir={'': 'plugins'},
-    install_requires=[],
+    install_requires=[
+        'prometheus-client',
+        'python-dateutil',
+        'pytz',
+    ],
     extras_require={},
     include_package_data=True,
     keywords='prometheus metrics journald logs',

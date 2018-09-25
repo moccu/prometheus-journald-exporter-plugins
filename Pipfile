@@ -14,9 +14,7 @@ pytest-cov = "*"
 ipdb = "*"
 
 [packages]
-prometheus-client = "*"
-python-dateutil = "*"
-pytz = "*"
+"-e ." = "*"
 
 [requires]
 python_version = "3.6"
