@@ -1,0 +1,14 @@
+build/
+_build/
+dist/
+*.egg-info/
+*.egg
+*.swp
+*.py[cod]
+__pycache__/
+*~
+
+.cache
+.pytest_cache
+
+.DS_Store
