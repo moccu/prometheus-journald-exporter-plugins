@@ -8,7 +8,7 @@ from prometheus_client import Counter
 class WebfrontCollectorPlugin:
     type = 'collector'
     filters = {'CONTAINER_TAG': 'webfront', 'PRIORITY': 6}
-    regex = re.compile(r'^({.*}) \[(.*?)\]$')
+    regex = re.compile(r'({.*}) \[(.*?)\]$')
 
     def __init__(self, prom_registry, config):
         plugin_config = config.get('webfrontcollector', {})
